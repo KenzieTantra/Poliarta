@@ -1,0 +1,246 @@
+*{box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: 'Kanit', sans-serif;}
+
+/*Navbar*/
+.p img{width: 50px;
+height: 50px;}
+
+.p{display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+padding: 20px 30px;
+z-index: 999;
+position: fixed;
+top: 0;
+left: 0;
+right:0;
+background-color: rgba(248, 248, 255, 0.9);
+align-items: center;}
+
+.menu a{margin: 0 15px;
+text-decoration: none;
+color: black;
+font-size: 25px;}
+
+.menu a:hover{color: royalblue;}
+
+.p a{text-decoration: none;
+color: black;
+}
+.p span{position: relative;
+top: -11px;
+left: 30px;
+font-size: 30px;}
+
+/*Home*/
+.home{overflow: hidden;}
+
+.s1{display: flex;
+height: fit-content;
+width: fit-content;
+animation: slide 30s infinite ; animation-timing-function: ease;}
+
+@keyframes slide{0% {transform: translateX(0);} 20%{transform: translateX(0);} 35%{transform: translateX(-100vw);} 50% {transform: translateX(-100vw);} 65%{transform: translateX(-200vw);}85%{transform: translateX(-200vw);}100%{transform: translateX(-300vw);}}
+
+.s1 img{height: 100vh;
+width: 100vw}
+
+.home .jdul{position: absolute;
+top: 350px;
+left: 50px;
+font-size: 25px;
+text-shadow: 3px 3px 5px black ;
+color: white;
+}
+.home button{
+	font-size: 30px;
+	padding: 0 20px;
+	cursor: pointer;
+}
+.home button:hover{
+	background-color: goldenrod;
+}
+.home button:active{
+	background-color: darkgoldenrod;
+	transform: scale(0.9);
+}
+
+/*au.html*/
+.about{position: fixed;
+top: 30vh;
+left:115vh;
+right: 0;
+bottom: 0;
+z-index: 1000;
+background-color: rgba(248, 248, 255, 0.9);
+width: 40vw;
+height: fit-content;
+padding: 8px;
+opacity: 0;
+animation: pe 2s; animation-fill-mode: forwards;
+}
+@keyframes pe{0% {transform: translateX(1000px); opacity: 50%} 100%{transform: translateX(0); opacity: 100%}}
+.about p{font-size: 20px;}
+.about img{
+	width: ;
+	height:150px ;
+}
+.about .nae{
+	display: flex;
+	flex-direction: row;
+
+}
+.about .nae table{
+	font-size: 17px;
+}
+.about .nae th{
+	text-align: left;
+
+}
+
+.about h1{
+	text-align: center;
+	font-size: 35px;
+	background-color: black;
+	color: white;
+	position: relative;
+	top: -35px
+}
+
+/*p.html*/
+.background{
+padding-top: 170px;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+flex-wrap: wrap;
+}
+.background img{
+width: 300px;
+height: 150px;
+border-radius: 20px;
+margin: 10px;
+}
+.background .gbr1 , .gbr2 {
+border: 5px double black;
+height: fit-content;
+width: 1000px;
+padding: 10px;
+margin: auto;
+display: flex;
+flex-direction: row;
+}
+
+.background h1{
+	font-size:50px ;
+	text-align: center;
+}
+
+.background .lo{
+	font-size: 20px;
+	padding: 0 7px
+
+}
+
+/*g.html*/
+.e img{height: 150px;
+width: 300px;
+margin-top: 25px;
+transition: 0.2s;
+}
+.e{padding: 50px;
+text-align: center;
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;}
+
+.galery h1{margin-top: 130px;
+display: block;
+border: 2px solid black;
+width:600px;
+text-align: right;
+transform: skew(-45deg);
+margin-left: -100px;
+}
+.e img:hover{transform: scale(1.2);}
+.galery span{
+	display: block;
+	transform: skew(45deg);
+	font-size: 50px;
+	margin-right: 70px;
+	margin-top: 10px;
+}
+
+.galery h1{background-color: lightyellow;}
+
+/*cu.html*/
+.cu h1{
+	font-size: 50px;
+	text-align: center;
+	padding-top: 120px;
+}
+.cu{
+	background-color: floralwhite;
+	height: 100%;
+	width: 100%;
+
+} 
+.sm{display:flex;
+	flex-direction: row;
+justify-content: center;
+}
+.sm img{
+	width: 30px;
+	height: 30px;
+	margin: 0 30px;
+}
+
+.cu .fm label{
+	display: inline-block;
+	width: 70px;
+
+}
+
+.cu .fm{
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	width: fit-content;
+}
+
+
+
+footer .ft{
+	position: fixed;
+	bottom: 0;
+	background-color: rgba(248, 248, 255, 0.9);
+	width: 100vw;
+	text-align: center;
+	padding: 13px 0;
+}
+
+footer .ft a{
+	text-decoration: none;
+	color: black;
+	margin: 0 15px;
+}
+
+footer .ft a:hover{color: royalblue;}
+
+/*responsive*/
+
+
+
+@media(max-width: 1445px){
+	.home .jdul{
+		font-size: 35px;
+	}
+	}
+
+
+@media(max-width: 950px){
+	.menu a{font-size: 21px;
+
+}
