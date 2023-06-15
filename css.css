@@ -51,26 +51,33 @@ width: 100vw}
 top: 350px;
 left: 50px;
 font-size: 25px;
-text-shadow: 3px 3px 5px black ;
+text-shadow: 2px 3px 1px black ;
 color: white;
+width: 70vw;
 }
 .home button{
 	font-size: 30px;
 	padding: 0 20px;
 	cursor: pointer;
+	border-radius: 20px;
+	border: none;
+	background-color: yellow;
+
 }
 .home button:hover{
 	background-color: goldenrod;
+	font-weight: bold;
 }
 .home button:active{
 	background-color: darkgoldenrod;
 	transform: scale(0.9);
+	font-weight: bold;
 }
 
 /*au.html*/
 .about{position: fixed;
 top: 30vh;
-left:115vh;
+left:55vw;
 right: 0;
 bottom: 0;
 z-index: 1000;
@@ -81,15 +88,22 @@ padding: 8px;
 opacity: 0;
 animation: pe 2s; animation-fill-mode: forwards;
 }
+
+.home .jdl .jdul{
+	width: 50vw;
+	top: 230px
+}
 @keyframes pe{0% {transform: translateX(1000px); opacity: 50%} 100%{transform: translateX(0); opacity: 100%}}
 .about p{font-size: 20px;}
 .about img{
 	width: ;
-	height:150px ;
+	height:100px ;
 }
 .about .nae{
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 
 }
 .about .nae table{
@@ -118,12 +132,12 @@ justify-content: space-evenly;
 flex-wrap: wrap;
 }
 .background img{
-width: 300px;
-height: 150px;
+
+height: 250px;
 border-radius: 20px;
 margin: 10px;
 }
-.background .gbr1 , .gbr2 {
+.background .gbr1 , .gbr2 , .gbr3{
 border: 5px double black;
 height: fit-content;
 width: 1000px;
@@ -139,9 +153,25 @@ flex-direction: row;
 }
 
 .background .lo{
-	font-size: 20px;
-	padding: 0 7px
+	font-size: 40px;
+	padding: 0 15px;
+	border-radius: 20px;
+	border: none;
+	cursor: pointer;
+	background-color: yellow;
 
+
+}
+.background td{
+	padding: 30px;
+}
+.background button:hover{
+	background-color: #FFD700;
+	font-weight: bold;
+}
+.background button:active{
+	background-color: #DAA520;
+	font-weight: bold;
 }
 
 /*g.html*/
@@ -238,9 +268,56 @@ footer .ft a:hover{color: royalblue;}
 		font-size: 35px;
 	}
 	}
-
+@media(max-width: 1025px){
+	.home .jdul{
+		font-size: 20px;
+		top: 240px
+	}
+}
 
 @media(max-width: 950px){
 	.menu a{font-size: 21px;
+
+}
+@media(max-width: 769px){
+	.p span{
+		display: none;
+	}.about{
+		top: 23vh;
+		left: 56vw;
+	}
+}
+@media(max-width: 426px){
+	.p img{
+		display: none;
+
+	}.p .menu  a{
+		font-size: 15px;
+		margin: 0 2px;
+
+	}
+	.p{
+		justify-content: center;
+	}
+	FOOTER .ft a{
+		margin: 0 5px;
+	}
+
+}
+@media(max-width: 321px){
+	.p img{
+		display: none;
+
+	}.p .menu  a{
+		font-size: 12px;
+
+	}
+	.p{
+		justify-content: center;
+	}
+	FOOTER .ft a{
+		margin: 0 5px;
+		font-size: 12px;
+	}
 
 }
