@@ -212,7 +212,7 @@ margin-left: -100px;
 	padding-top: 120px;
 }
 .cu{
-	background-color: floralwhite;
+	
 	height: 100%;
 	width: 100%;
 
@@ -220,6 +220,7 @@ margin-left: -100px;
 .sm{display:flex;
 	flex-direction: row;
 justify-content: center;
+flex-wrap: wrap;
 }
 .sm img{
 	width: 30px;
@@ -238,6 +239,7 @@ justify-content: center;
 	flex-direction: row;
 	margin: auto;
 	width: fit-content;
+	flex-wrap: wrap;l
 }
 
 
@@ -286,6 +288,13 @@ footer .ft a:hover{color: royalblue;}
 		top: 23vh;
 		left: 56vw;
 	}
+	.background .gbr1 , .gbr2 , .gbr3{
+		width: 80vw;
+		flex-wrap: wrap;
+	}
+	.background img{
+		height: 200px;
+	}
 }
 @media(max-width: 426px){
 	.p img{
@@ -298,10 +307,27 @@ footer .ft a:hover{color: royalblue;}
 	}
 	.p{
 		justify-content: center;
+		padding: 20px 10px;
 	}
 	FOOTER .ft a{
 		margin: 0 5px;
 	}
+	.jdl .jdul{
+		display: none;
+	}
+	.about {
+		left: 10vw;
+		width: 80vw;
+		top: 15vh;
+	}
+	.cu .fm iframe{
+		width: 300px;
+		margin: 15px
+	}
+	.cu .fm form{
+		margin: 15px
+	}
+
 
 }
 @media(max-width: 321px){
@@ -319,5 +345,14 @@ footer .ft a:hover{color: royalblue;}
 		margin: 0 5px;
 		font-size: 12px;
 	}
-
+	.background img{
+		height: 150;
+	}
+	.background .gbr1 , .gbr2 , .gbr3{
+		font-size: 13px;
+		padding: 2px
+	}
+	.background .gbr3 table{
+		font-size: 13px;
+	}
 }
