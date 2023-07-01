@@ -17,7 +17,8 @@ top: 0;
 left: 0;
 right:0;
 background-color: rgba(248, 248, 255, 0.9);
-align-items: center;}
+align-items: center;
+width: 100vw;}
 
 .menu a{margin: 0 15px;
 text-decoration: none;
@@ -175,6 +176,7 @@ flex-direction: row;
 }
 
 /*g.html*/
+.galery {overflow-x: hidden;}
 .e img{height: 150px;
 width: 300px;
 margin-top: 25px;
@@ -318,6 +320,9 @@ footer .ft a:hover{color: royalblue;}
 		font-size: 20px;
 		top: 240px
 	}
+	.galery h1{
+
+	}
 }
 
 @media(max-width: 950px){
@@ -370,6 +375,9 @@ footer .ft a:hover{color: royalblue;}
 	.cu .fm form{
 		margin: 15px
 	}
+	.galery h1{
+		width: 400px;
+	}
 
 
 }
@@ -398,4 +406,6 @@ footer .ft a:hover{color: royalblue;}
 	.background .gbr3 table{
 		font-size: 13px;
 	}
+	.galery h1{ 
+	width: 350; }
 }
